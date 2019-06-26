@@ -1,0 +1,14 @@
+language: python
+
+python:
+  - "3.5"
+  - "3.6"
+
+install:
+ - pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple ipydex
+#  - pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple symbtools
+
+# command to run tests
+script:
+ - python -c "from ipydex.test import run_all; run_all()"
+
