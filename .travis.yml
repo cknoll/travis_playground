@@ -6,9 +6,11 @@ python:
 
 install:
  - pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple ipydex
+ - pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple symbtools
 #  - pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple symbtools
 
 # command to run tests
 script:
  - python -c "from ipydex.test import run_all; run_all()"
+ - python -c "from symbtools.test import run_all; run_all()"
 
