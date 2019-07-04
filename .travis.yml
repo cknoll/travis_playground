@@ -11,7 +11,6 @@ install:
 
 # command to run tests
 script:
-# - python -c "from ipydex.test import run_all; run_all()"
- - python -c "import symbtools"
+ - python -c "from ipydex.test import run_all; run_all()"
  - python -c "from symbtools.test import run_all; run_all()"
 
